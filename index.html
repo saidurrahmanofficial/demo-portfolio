@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./output.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/@tailwindplus/elements"></script>
+
+ <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+  <title>Saidur Rahman</title>
+</head>
+
+<body>
+  <nav
+    class="relative  bg-red-600 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10">
+    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div class="relative flex h-16 items-center justify-between">
+        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <!-- Mobile menu button-->
+          <button type="button" command="--toggle" commandfor="mobile-menu"
+            class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500">
+            <span class="absolute -inset-0.5"></span>
+            <span class="sr-only">Open main menu</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+              aria-hidden="true" class="size-6 in-aria-expanded:hidden">
+              <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+              aria-hidden="true" class="size-6 not-in-aria-expanded:hidden">
+              <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+          <div class="flex shrink-0 items-center">
+            <h3 class="font-bold text-white">Saidur Rahman</h3>
+              
+          </div>
+          
+        <nav class="flex justify-center space-x-4 flex-6">
+  <a href="/dashboard" class="font-bold rounded-lg px-3 py-2 text-gray-700 hover:bg-red-100 hover:text-gray-900">
+    About
+  </a>
+  <a href="/team" class="font-bold rounded-lg px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900">
+    Experience
+  </a>
+  <a href="/projects" class="font-bold rounded-lg px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900">
+    Skills
+  </a>
+  <a href="/reports" class="font-bold rounded-lg px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900">
+    Project
+  </a>
+</nav>
+        <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+          <button type="button"
+            class="relative rounded-full p-1 text-gray-400 hover:text-white focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
+            <span class="absolute -inset-1.5"></span>
+            <span class="sr-only">View notifications</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+              aria-hidden="true" class="size-6">
+              <path
+                d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+
+          <!-- Profile dropdown -->
+          <el-dropdown class="relative ml-3">
+            <button
+              class="relative flex rounded-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">
+              <span class="absolute -inset-1.5"></span>
+              <span class="sr-only">Open user menu</span>
+              <img
+                src="my photo.jpeg"
+                alt="" class="size-10 rounded-full bg-gray-800 outline -outline-offset-1 outline-white/10" />
+            </button>
+
+            <el-menu anchor="bottom end" popover
+              class="w-48 origin-top-right rounded-md bg-gray-800 py-1 outline -outline-offset-1 outline-white/10 transition transition-discrete [--anchor-gap:--spacing(2)] data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
+              <a href="#" class="block px-4 py-2 text-sm text-gray-300 focus:bg-white/5 focus:outline-hidden">Your
+                profile</a>
+             
+              <a href="#" class="block px-4 py-2 text-sm text-gray-300 focus:bg-white/5 focus:outline-hidden">Sign
+                out</a>
+            </el-menu>
+          </el-dropdown>
+        </div>
+      </div>
+    </div>
+
+    <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
+      <div class="space-y-1 px-2 pt-2 pb-3">
+        <!-- Current: "bg-gray-950/50 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
+        <a href="#" aria-current="page"
+          class="block rounded-md bg-gray-950/50 px-3 py-2 text-base font-medium text-white">Dashboard</a>
+        <a href="#"
+          class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Team</a>
+        <a href="#"
+          class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Projects</a>
+        <a href="#"
+          class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Calendar</a>
+      </div>
+    </el-disclosure>
+  </nav>
+<!-- head section -->
+ <div class="overflow-hidden bg-gray-900 py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+      <div class="lg:pt-4 lg:pr-8">
+        <div class="lg:max-w-lg">
+         
+          <p class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">Saidur Rahman</p>
+          <p class="mt-6 text-lg/8 text-gray-300">Full-stack Web Developer | Expert in [HTML, CSS, bootstrap, Tailwind css, Javascript] |Building Scalable Responsive website.</p>
+          <dl class="mt-10 max-w-xl space-y-8 text-base/7 text-gray-400 lg:max-w-none">
+            <div class="relative pl-9">
+              <dt class="inline font-semibold text-white">
+                <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="absolute top-1 left-1 size-5 text-indigo-400">
+                  <path d="M5.5 17a4.5 4.5 0 0 1-1.44-8.765 4.5 4.5 0 0 1 8.302-3.046 3.5 3.5 0 0 1 4.504 4.272A4 4 0 0 1 15 17H5.5Zm3.75-2.75a.75.75 0 0 0 1.5 0V9.66l1.95 2.1a.75.75 0 1 0 1.1-1.02l-3.25-3.5a.75.75 0 0 0-1.1 0l-3.25 3.5a.75.75 0 1 0 1.1 1.02l1.95-2.1v4.59Z" clip-rule="evenodd" fill-rule="evenodd" />
+                </svg>
+                Push to deploy.
+              </dt>
+              <dd class="inline">Github and Git Beacause all programmer use this site push code and save</dd>
+            </div>
+            <div class="relative pl-9">
+              <dt class="inline font-semibold text-white">
+                <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="absolute top-1 left-1 size-5 text-indigo-400">
+                  <path d="M10 1a4.5 4.5 0 0 0-4.5 4.5V9H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2h-.5V5.5A4.5 4.5 0 0 0 10 1Zm3 8V5.5a3 3 0 1 0-6 0V9h6Z" clip-rule="evenodd" fill-rule="evenodd" />
+                </svg>
+                SSL certificates.
+              </dt>
+              <dd class="inline text-red-500">I am Provide all ssl certificate Because modern website is too Much important in this criteria</dd>
+            </div>
+            <div class="relative pl-9">
+              <dt class="inline font-semibold text-white">
+                <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="absolute top-1 left-1 size-5 text-indigo-400">
+                  <path d="M4.632 3.533A2 2 0 0 1 6.577 2h6.846a2 2 0 0 1 1.945 1.533l1.976 8.234A3.489 3.489 0 0 0 16 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234Z" />
+                  <path d="M4 13a2 2 0 1 0 0 4h12a2 2 0 1 0 0-4H4Zm11.24 2a.75.75 0 0 1 .75-.75H16a.75.75 0 0 1 .75.75v.01a.75.75 0 0 1-.75.75h-.01a.75.75 0 0 1-.75-.75V15Zm-2.25-.75a.75.75 0 0 0-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 0 0 .75-.75V15a.75.75 0 0 0-.75-.75h-.01Z" clip-rule="evenodd" fill-rule="evenodd" />
+                </svg>
+                Database backups.
+              </dt>
+              <dd class="inline">I am provide all Database setup and neat and clean no lack issu too much useable and faster.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+      <img width="200px" height="200px"  src="my photo.jpeg" class="w-xl max-w-none rounded-xl shadow-xl ring-1 ring-white/10 sm:w-95 md:-ml-4  " />
+    </div>
+  </div>
+</div>
+
+ 
+<!-- about section -->
+ <div class="bg-gray-900 py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:text-center">
+      <h2 class="text-base/7  font-semibold text-indigo-400">About Me</h2>
+      <p class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl lg:text-balance">Everything you need to deploy your website</p>
+      <p class="mt-6 text-lg/8 text-gray-300">Hey There ,I am web developer i am also learn javascript and React js and also problem solving. </p>
+    </div>
+    <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+      <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+        <div class="relative pl-16">
+          <dt class="text-base/7 font-semibold text-white">
+            <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-indigo-500">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 text-white">
+                <path d="M12 16.5V9.75m0 0 3 3m-3-3-3 3M6.75 19.5a4.5 4.5 0 0 1-1.41-8.775 5.25 5.25 0 0 1 10.233-2.33 3 3 0 0 1 3.758 3.848A3.752 3.752 0 0 1 18 19.5H6.75Z" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            Frontend Web developer
+          </dt>
+          <dd class="mt-2 text-base/7 text-gray-400">I am a Frontend web developer and also make sure a Suitable web design</dd>
+        </div>
+        <div class="relative pl-16">
+          <dt class="text-base/7 font-semibold text-white">
+            <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-indigo-500">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 text-white">
+                <path d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            NSDA certificates
+          </dt>
+          <dd class="mt-2 text-base/7 text-gray-400">I am currently pass web developent level-3. This project funded By world bank and also help us NSDA</dd>
+        </div>
+        <div class="relative pl-16">
+          <dt class="text-base/7 font-semibold text-white">
+            <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-indigo-500">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 text-white">
+                <path d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            Accounting and Business Management
+          </dt>
+          <dd class="mt-2 text-base/7 text-gray-400">I am also Provide accounting topic and Business management Tips and how to Grow your Business.Because i am a BBA student of National University</dd>
+        </div>
+        <div class="relative pl-16">
+          <dt class="text-base/7 font-semibold text-white">
+            <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-indigo-500">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 text-white">
+                <path d="M7.864 4.243A7.5 7.5 0 0 1 19.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 0 0 4.5 10.5a7.464 7.464 0 0 1-1.15 3.993m1.989 3.559A11.209 11.209 0 0 0 8.25 10.5a3.75 3.75 0 1 1 7.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 0 1-3.6 9.75m6.633-4.596a18.666 18.666 0 0 1-2.485 5.33" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            Artificial intelegent
+          </dt>
+          <dd class="mt-2 text-base/7 text-gray-400">I am provide artifical intelegent on website Because all customer choose this..And very smoothly massage...</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</div>
+<!-- logo section -->
+ <section>
+<div class="bg-gray-900 py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <h2 class="text-center text-lg/8 font-semibold text-white">Trusted by the world’s most innovative teams</h2>
+    <div class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+      <img width="158" height="48" src="https://tailwindcss.com/plus-assets/img/logos/158x48/transistor-logo-white.svg" alt="Transistor" class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" />
+
+      <img width="158" height="48" src="https://scontent.fjsr11-1.fna.fbcdn.net/v/t39.30808-6/352382026_925280238703566_700687980928133025_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=umrVzOvl1HAQ7kNvwGVD7-y&_nc_oc=AdkoVPxuqP9ajWH2KPfPgpiFrhP0pKPPM4EKACzJdEl9vsonFLP4k7isi-qsAGemDvw&_nc_zt=23&_nc_ht=scontent.fjsr11-1.fna&_nc_gid=KoaXTtI9FlmNo56lD7t0GA&oh=00_AfvxhW7bFVE7r_2bdFVgL4viqU3u32VGqi0sc7C8bt0IOA&oe=6999307F" alt="Reform" class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" />
+
+      <img width="158" height="48" src="https://tailwindcss.com/plus-assets/img/logos/158x48/tuple-logo-white.svg" alt="Tuple" class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" />
+
+      <img width="158" height="48" src="https://tailwindcss.com/plus-assets/img/logos/158x48/savvycal-logo-white.svg" alt="SavvyCal" class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" />
+
+      <img width="158" height="48" src="https://tailwindcss.com/plus-assets/img/logos/158x48/statamic-logo-white.svg" alt="Statamic" class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1" />
+    </div>
+  </div>
+</div>
+ </section>
+ <!-- footer section -->
+  <footer class="bg-gray-900 text-white py-12">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 border-b border-gray-800 pb-8">
+      
+      <div>
+        <h2 class="text-2xl font-bold bg-gradient-to-r  from-blue-400 to-emerald-400 bg-clip-text text-transparent">
+          Saidur Rahman
+        </h2>
+        <p class="mt-4 text-gray-400 leading-relaxed">
+          Building digital experiences with passion and precision. Let's create something amazing a responsive website.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+        <ul class="space-y-2 text-gray-400">
+          <li><a href="#about" class="hover:text-blue-400 transition">About Me</a></li>
+          <li><a href="#projects" class="hover:text-blue-400 transition">Projects</a></li>
+          <li><a href="#contact" class="hover:text-blue-400 transition">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Connect With Me</h3>
+        <div class="flex space-x-4">
+          <a href="#" class="p-2 bg-gray-800 rounded-full hover:bg-blue-600 transition">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="#" class="p-2 bg-gray-800 rounded-full hover:bg-gray-700 transition">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.041-1.416-4.041-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pt-8 text-center text-gray-500 text-sm">
+      &copy; 2026 Saidur Rahman All rights reserved.
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>
